@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>.upload-wrap {
+    position: relative;
+
+}
+
+.upload-btn {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    }
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: right;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.form-submit-button {
+background: #0066A2;
+color: white;
+border-style: outset;
+border-color: #0066A2;
+height: 50px;
+width: 100px;
+font: bold15px arial,sans-serif;
+text-shadow: none;
+}
+
+ </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindmeld Parser</title>
+</head>
+<body style="background-color:white;">
+<center style="background-color:powderblue;">
+<h1 style="font-size: 70px";>Mindmeld Parser<img src="static/process4.png" alt="process" height=70 width=70 ></h1>
+    </center>
+
+<div class="row">
+  <div class="column">
+      <h2>Mindmeld parser converts the mindmeld training data into sandbox consumable format.</h2>
+      <br>
+      <img src="static/mindmeld_train.png" alt="Forest" style="width:50%;">
+      <ul>
+  <li>Upload file in zip format (less than 1mb)</li>
+  <li>Zip the domain folder and upload file, domains.zip-->domains-->domain1,domain2..</li>
+          <li>Train files should be named train.txt according to Mindmeld norms</li>
+
+</ul>
+      <br><br>
+
+   <form action="/submitform" method="post" enctype="multipart/form-data">
+    <div>
+
+    <input type="file" name="test" >
+</div>
+
+    <input type="submit">
+</form>
+      <i style="color:Blue">(Currently we are supporting Faqbot only)</i>
+
+
+  </div>
+  <div class="column">
+    <img src="static/file_image.png" alt="search" style="width:100%;">
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
+</body>
+</html>
