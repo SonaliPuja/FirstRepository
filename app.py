@@ -116,8 +116,9 @@ async def handle_form(test:UploadFile = File(...)):
 
     print(test.filename)
     print(test.content_type)
-    if test.content_type not in ["application/zip"]:
+    if test.content_type not in ["application/zip","application/octet-stream","multipart/x-zip","application/zip-compressed","application/x-zip-compressed"]:
         raise HTTPException(400, detail="Invalid document type")
+
     # create folder if not exist
     create_folder(zipfile_folder)
     create_folder(unzipped_folder)
